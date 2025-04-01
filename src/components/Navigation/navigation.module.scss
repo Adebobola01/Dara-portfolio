@@ -1,0 +1,14 @@
+.navigation {
+  display: flex;
+
+  a {
+    font-size: 1.6rem;
+    font-weight: 500;
+    height: 2.4rem;
+    color: #49494ac4;
+
+    &:not(:first-child) {
+      margin-left: 4rem;
+    }
+  }
+}

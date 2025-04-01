@@ -1,0 +1,58 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 90%;
+  //   padding: 0 2rem;
+
+  img {
+    width: 50rem;
+    height: 50rem;
+  }
+
+  &_details {
+    display: flex;
+    flex-direction: column;
+    // margin-left: auto;
+    // align-items: flex-end;
+
+    p:first-child {
+      color: #3f3f40;
+      font-size: 3.2rem;
+      margin: 0 0 0 0.6rem;
+    }
+    p:last-of-type {
+      color: #1256ad;
+      font-size: 8rem;
+      font-weight: 400;
+      text-align: left;
+      margin: 0;
+      line-height: 8rem;
+      display: flex;
+      align-items: center;
+    }
+    &_btns {
+      display: flex;
+      margin: 1rem 0 0 0.6rem;
+
+      button:first-of-type {
+        padding: 1rem;
+        border-radius: 1rem;
+        background-color: #2f85fe;
+        color: #fff;
+        font-size: 1.6rem;
+        margin-right: 1rem;
+      }
+      button {
+        padding: 1rem;
+        border-radius: 1rem;
+        font-size: 1.6rem;
+        color: #1256ad;
+        background-color: transparent;
+        border: 1px solid #2f85fe;
+        width: 20rem;
+      }
+    }
+  }
+}
