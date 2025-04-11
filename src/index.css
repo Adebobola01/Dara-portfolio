@@ -13,6 +13,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+section {
+  width: 90%;
+  padding: 6rem;
+}
+
 a {
   font-weight: 500;
   color: #646cff;

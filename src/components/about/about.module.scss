@@ -2,7 +2,7 @@
   padding: 6rem;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 4rem;
 
   &_profile {
     padding: 1.4rem;
@@ -24,12 +24,12 @@
       }
       div {
         p {
-          font-size: 1.6rem;
+          font-size: 2rem;
           font-weight: 500;
           margin: 0;
         }
         span {
-          font-size: 1.2rem;
+          font-size: 1.6rem;
           font-weight: 500;
           color: #1256ad;
         }
@@ -71,7 +71,7 @@
       margin: 0;
     }
     p {
-      font-size: 1.3rem;
+      font-size: 1.6rem;
       margin: 0;
     }
     div {
