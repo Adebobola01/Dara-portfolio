@@ -1,11 +1,17 @@
 .navigation {
   display: flex;
 
-  a {
+  button {
     font-size: 1.6rem;
     font-weight: 500;
-    height: 2.4rem;
+    // height: 2.4rem;
     color: #49494ac4;
+    background-color: transparent;
+
+    &:hover {
+      outline: none;
+      border: none;
+    }
 
     &:not(:first-child) {
       margin-left: 4rem;

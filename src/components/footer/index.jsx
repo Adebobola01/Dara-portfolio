@@ -6,7 +6,7 @@ import whatsappIcon from "../../assets/whatsapp_icon.png";
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} id="footer">
       <div className={styles.footer_container}>
         <div className={styles.footer_heading}>
           <p>LET’S GET IN TOUCH</p>

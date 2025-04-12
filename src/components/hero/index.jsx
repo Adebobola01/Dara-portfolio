@@ -11,7 +11,7 @@ const Hero = () => {
   };
 
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} id="home">
       <div className={styles.hero_details}>
         <p>Hi, I’m Oluwadara Olasunkanmi</p>
         <p>DATA ANALYST</p>

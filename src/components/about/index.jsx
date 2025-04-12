@@ -3,7 +3,7 @@ import CheckmarkImg from "../../assets/checkmark.svg";
 
 const About = () => {
   return (
-    <section className={styles.about}>
+    <section className={styles.about} id="about">
       <div className={styles.about_profile}>
         <div className={styles.about_profile_details}>
           {/* <img /> */}

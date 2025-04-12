@@ -14,7 +14,7 @@ const Testimonial = ({ content, name, profession }) => {
 
 const Testimonials = () => {
   return (
-    <section className={styles.testimonials}>
+    <section className={styles.testimonials} id="testimonials">
       <h2>Testimonials</h2>
       <div>
         <Testimonial
