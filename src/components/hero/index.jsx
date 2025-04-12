@@ -17,7 +17,7 @@ const Hero = () => {
         <p>DATA ANALYST</p>
         <div className={styles.hero_details_btns}>
           <button>Hire Me</button>
-          <button>Download CV</button>
+          <button className="white_btn">Download CV</button>
         </div>
       </div>
       <img

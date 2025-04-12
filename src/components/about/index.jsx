@@ -52,7 +52,7 @@ const About = () => {
           vestibulum eu nisl
         </p>
         <div>
-          <button>Download CV</button>
+          <button className="white_btn">Download CV</button>
           <button>My Works on GitHub</button>
         </div>
       </div>
