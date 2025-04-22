@@ -2,14 +2,19 @@ import styles from "./services.module.scss";
 import analysisIcon from "../../assets/analysis.png";
 import interpretationIcon from "../../assets/interpretation.png";
 import visualizationIcon from "../../assets/visualization.png";
-
+import { motion } from "motion/react";
 const Service = ({ image, title, details }) => {
   return (
-    <div className={styles.service}>
+    <motion.div
+      initial={{ y: 70, opacity: 0.75 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ type: "spring", duration: 1 }}
+      className={styles.service}
+    >
       <img src={image} alt={title} />
       <h2>{title}</h2>
       <p>{details}</p>
-    </div>
+    </motion.div>
   );
 };
 

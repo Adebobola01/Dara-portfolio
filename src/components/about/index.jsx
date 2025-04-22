@@ -1,12 +1,18 @@
 import styles from "./about.module.scss";
 import CheckmarkImg from "../../assets/checkmark.svg";
 import image from "../../assets/dara's_pic.png";
+import { motion } from "motion/react";
 
 const About = () => {
   return (
     <section className={styles.about} id="about">
       <div className={styles.about_profile}>
-        <div className={styles.about_profile_details}>
+        <motion.div
+          initial={{ y: 70, opacity: 0.75 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ type: "spring", duration: 1 }}
+          className={styles.about_profile_details}
+        >
           <img
             src={image}
             alt="Dara's picture"
@@ -17,8 +23,13 @@ const About = () => {
             <p>Oluwadara Olasukanmi</p>
             <span>Data Analyst</span>
           </div>
-        </div>
-        <div className={styles.about_profile_skills}>
+        </motion.div>
+        <motion.div
+          initial={{ y: 70, opacity: 0.75 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ type: "spring", duration: 1 }}
+          className={styles.about_profile_skills}
+        >
           <span className={styles.about_profile_skills_skill}>
             <img src={CheckmarkImg} alt="checkmark" />
             <p> Data cleaning</p>
@@ -43,9 +54,14 @@ const About = () => {
             <img src={CheckmarkImg} alt="checkmark" />
             <p> Group Work</p>
           </span>
-        </div>
+        </motion.div>
       </div>
-      <div className={styles.about_details}>
+      <motion.div
+        initial={{ y: 70, opacity: 0.75 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ type: "spring", duration: 1 }}
+        className={styles.about_details}
+      >
         <h3>About Me</h3>
         <p>
           Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
@@ -64,7 +80,7 @@ const About = () => {
           <button className="white_btn">Download CV</button>
           <button>My Works on GitHub</button>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

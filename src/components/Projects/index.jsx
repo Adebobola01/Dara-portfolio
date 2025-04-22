@@ -1,15 +1,20 @@
 import styles from "./projects.module.scss";
-
+import { motion } from "motion/react";
 const Project = ({ title, details }) => {
   return (
-    <div className={styles.project}>
+    <motion.div
+      initial={{ y: 70, opacity: 0.75 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ type: "spring", duration: 1 }}
+      className={styles.project}
+    >
       <span></span>
       <div>
         <h2>{title}</h2>
         <p>{details} </p>
         <button>View Project</button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
