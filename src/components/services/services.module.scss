@@ -10,8 +10,10 @@
 
   &_container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     gap: 3rem;
+    row-gap: 6rem;
     margin-top: 8rem;
   }
 }
@@ -19,15 +21,15 @@
 .service {
   //   display: flex;
   font-size: 1.6rem;
-  background-color: #ffffff;
+  background-color: #e4e9ef73;
   border-radius: 2rem;
   position: relative;
-  padding: 5rem 2rem;
+  padding: 5rem 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 30rem;
-  height: 35rem;
+  // height: 20rem;
   color: #292828;
 
   img {
@@ -44,7 +46,9 @@
     margin: 0;
   }
   p {
-    margin: 3rem 1rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 1rem;
     font-size: 1.6rem;
   }
 

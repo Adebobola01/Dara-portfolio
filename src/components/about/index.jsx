@@ -1,13 +1,18 @@
 import styles from "./about.module.scss";
 import CheckmarkImg from "../../assets/checkmark.svg";
+import image from "../../assets/dara's_pic.png";
 
 const About = () => {
   return (
     <section className={styles.about} id="about">
       <div className={styles.about_profile}>
         <div className={styles.about_profile_details}>
-          {/* <img /> */}
-          <span className={styles.about_profile_details_image}></span>
+          <img
+            src={image}
+            alt="Dara's picture"
+            className={styles.about_profile_details_image}
+          />
+          {/* <span className={styles.about_profile_details_image}></span> */}
           <div>
             <p>Oluwadara Olasukanmi</p>
             <span>Data Analyst</span>
@@ -20,19 +25,23 @@ const About = () => {
           </span>
           <span className={styles.about_profile_skills_skill}>
             <img src={CheckmarkImg} alt="checkmark" />
-            <p> Data cleaning</p>
+            <p> Data Collecting</p>
           </span>
           <span className={styles.about_profile_skills_skill}>
             <img src={CheckmarkImg} alt="checkmark" />
-            <p> Data cleaning</p>
+            <p> Data Exploration</p>
           </span>
           <span className={styles.about_profile_skills_skill}>
             <img src={CheckmarkImg} alt="checkmark" />
-            <p> Data cleaning</p>
+            <p> Data Visualization</p>
           </span>
           <span className={styles.about_profile_skills_skill}>
             <img src={CheckmarkImg} alt="checkmark" />
-            <p> Data cleaning</p>
+            <p> Predictive Modeling</p>
+          </span>
+          <span className={styles.about_profile_skills_skill}>
+            <img src={CheckmarkImg} alt="checkmark" />
+            <p> Group Work</p>
           </span>
         </div>
       </div>

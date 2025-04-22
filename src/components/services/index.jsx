@@ -21,17 +21,32 @@ const Services = () => {
         <Service
           image={analysisIcon}
           title="Data Analysis"
-          details="Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero"
+          details="Identify trends, patterns, and anomalies"
         />
         <Service
           image={interpretationIcon}
           title="Data Visualization"
-          details="Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero "
+          details="Build interactive dashboards and charts using Power BI orTableau."
         />
         <Service
           image={visualizationIcon}
           title="Data Interpretation"
-          details="Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero "
+          details="Interpret results to support business or research decisions"
+        />
+        <Service
+          image={visualizationIcon}
+          title="Data Preparation"
+          details="Prepare raw data for analysis using tools like Excel, Python (Pandas), or SQL"
+        />
+        <Service
+          image={visualizationIcon}
+          title="Data Documentation"
+          details="Document data sources, processes, and metrics for team understanding and transparency"
+        />
+        <Service
+          image={visualizationIcon}
+          title="Data querying"
+          details="Using SQL to extract, join, and manipulate data from relational databases"
         />
       </div>
     </section>

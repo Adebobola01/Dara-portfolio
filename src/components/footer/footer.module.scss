@@ -32,8 +32,11 @@
 
   &_details {
     border-right: 1px solid #fff;
-    padding-right: 5rem;
-    width: 50rem;
+    // padding-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
     button {
       color: #1256ad;
       background-color: #ffffff;
@@ -54,6 +57,7 @@
       color: #ffffffd4;
       font-size: 1.6rem;
       font-weight: 500;
+      width: 80%;
       margin: 0;
     }
     &_icons {
@@ -67,8 +71,12 @@
     }
   }
   &_navigation {
-    padding: 0 5rem;
+    padding: 0 3rem;
+    // width: 30%;
     border-right: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     h2 {
       color: #fff;
       font-size: 2rem;
@@ -89,10 +97,15 @@
   }
 
   &_contact {
-    padding: 0 5rem;
+    padding-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
     h2 {
       font-size: 2rem;
       font-weight: 600;
+      color: #ffffffe8;
     }
     &_details {
       div {
@@ -102,8 +115,50 @@
         p {
           font-size: 1.6rem;
           margin: 0;
+          color: #ffffffe8;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .footer {
+    &_container {
+      padding: 3rem 0 3rem 2rem;
+    }
+
+    &_details {
+      padding-right: 1rem;
+    }
+    &_navigation {
+      padding: 0 2rem;
+    }
+    &_contact {
+      padding-left: 2rem;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .footer {
+    &_navigation {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .footer {
+    &_container {
+      padding: 3rem 0 3rem 2rem;
+    }
+
+    &_details {
+      border-right: none;
+    }
+    &_contact {
+      display: none;
     }
   }
 }

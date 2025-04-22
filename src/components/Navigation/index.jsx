@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import Lenis from "@studio-freight/lenis";
 import styles from "./navigation.module.scss";
+import ToggleBtn from "../toggleBtn";
 
 const Navigation = () => {
   const lenis = useRef(null);
@@ -30,17 +31,20 @@ const Navigation = () => {
     lenis.current.scrollTo(element);
   };
   return (
-    <nav className={styles.navigation}>
-      {/* <div> */}
-      <button onClick={() => scrollToSection("/")}>Home</button>
-      <button onClick={() => scrollToSection("about")}>About</button>
-      <button onClick={() => scrollToSection("services")}>Services</button>
-      <button onClick={() => scrollToSection("projects")}>Projects</button>
-      <button onClick={() => scrollToSection("footer")}>Contact</button>
+    <>
+      <nav className={styles.navigation}>
+        {/* <div> */}
+        <button onClick={() => scrollToSection("home")}>Home</button>
+        <button onClick={() => scrollToSection("about")}>About</button>
+        <button onClick={() => scrollToSection("services")}>Services</button>
+        <button onClick={() => scrollToSection("projects")}>Projects</button>
+        <button onClick={() => scrollToSection("footer")}>Contact</button>
 
-      {/* </div> */}
-      {/* <ToggleBtn click={props.toggleClick} opened={props.toggleOpen} /> */}
-    </nav>
+        {/* </div> */}
+        {/* <ToggleBtn click={props.toggleClick} opened={props.toggleOpen} /> */}
+      </nav>
+      <ToggleBtn />
+    </>
   );
 };
 

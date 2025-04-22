@@ -4,8 +4,10 @@ import Navigation from "../Navigation";
 
 const Navbar = () => (
   <header className={styles.header}>
-    <Logo />
-    <Navigation />
+    <div className={styles.header_container}>
+      <Logo />
+      <Navigation />
+    </div>
   </header>
 );
 

@@ -38,9 +38,9 @@ html,
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-section {
+/* section {
   border-bottom: 1px solid #1f416d;
-}
+} */
 
 @keyframes logo-spin {
   from {

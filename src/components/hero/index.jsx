@@ -1,15 +1,9 @@
 import styles from "./hero.module.scss";
-import HeroImg from "../../assets/hero.png";
+import HeroImg from "../../assets/hero1.png";
 import HeroImg2 from "../../assets/hero2.png";
-import { useState } from "react";
+import HeroImg3 from "../../assets/hero3.png";
 
 const Hero = () => {
-  const [hover, setHover] = useState(false);
-
-  const toggleImage = () => {
-    setHover(!hover);
-  };
-
   return (
     <section className={styles.hero} id="home">
       <div className={styles.hero_details}>
@@ -20,12 +14,11 @@ const Hero = () => {
           <button className="white_btn">Download CV</button>
         </div>
       </div>
-      <img
-        src={hover ? HeroImg2 : HeroImg}
-        onMouseOver={toggleImage}
-        alt="hero image"
-        onMouseLeave={toggleImage}
-      />
+      <div className={styles.hero_image_container}>
+        <img src={HeroImg} alt="hero image 1" />
+        <img src={HeroImg2} alt="hero image 2" />
+        <img src={HeroImg3} alt="hero image 3" />
+      </div>
     </section>
   );
 };

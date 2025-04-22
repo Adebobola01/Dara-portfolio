@@ -1,5 +1,6 @@
 .navigation {
   display: flex;
+  justify-content: space-between;
 
   button {
     font-size: 1.6rem;
@@ -12,9 +13,30 @@
       outline: none;
       border: none;
     }
+  }
+}
 
-    &:not(:first-child) {
-      margin-left: 4rem;
+@media (max-width: 950px) {
+  .navigation {
+    // display: none;
+    button {
+      padding: 0.5rem 1rem;
     }
+  }
+}
+
+@media (max-width: 800px) {
+  .navigation {
+    // display: none;
+    button {
+      padding: 0.5rem 1rem;
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .navigation {
+    display: none;
   }
 }

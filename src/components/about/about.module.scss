@@ -1,12 +1,12 @@
 .about {
-  padding: 6rem;
+  padding: 3rem 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 4rem;
 
   &_profile {
     padding: 1.4rem;
-    background-color: #fff;
+    background-color: #e4e9ef;
     border-radius: 3.2rem;
 
     &_details {
@@ -17,8 +17,8 @@
       border-bottom: 1px solid #1f416d80;
 
       &_image {
-        width: 7rem;
-        height: 7rem;
+        width: 10rem;
+        height: 10rem;
         border-radius: 50%;
         background-color: #d9d9d9;
         display: flex;
@@ -27,6 +27,7 @@
         color: #49494a;
         p {
           font-size: 2rem;
+          text-wrap: nowrap;
           font-weight: 500;
           margin: 0;
         }
@@ -53,7 +54,7 @@
           height: 2rem;
         }
         p {
-          font-size: 1.2rem;
+          font-size: 1.6rem;
           color: #49494ac4;
           margin: 0;
         }
@@ -63,9 +64,9 @@
 
   &_details {
     padding: 2rem;
-    background-color: #fff;
+    background-color: #e4e9ef;
     border-radius: 3.2rem;
-    width: 60%;
+    width: 70%;
     color: #49494ac4;
 
     h3 {
@@ -77,6 +78,10 @@
     p {
       font-size: 1.6rem;
       margin: 0;
+      height: 21ch;
+      white-space: wrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     div {
       display: flex;
@@ -92,13 +97,69 @@
         font-size: 1.6rem;
       }
       button:first-of-type {
-        background-color: transparent;
+        background-color: #fff;
         color: #2f85fe;
         border: 1px solid #2f85fe;
       }
       button:last-of-type {
         background-color: #2f85fe;
         color: #fff;
+      }
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .about {
+    // flex-direction: column;
+    gap: 2rem;
+    &_details {
+      // order: 0;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .about {
+    flex-direction: column;
+
+    &_details {
+      width: 100%;
+    }
+    &_profile {
+      order: 1;
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .about {
+    &_details {
+      width: 100%;
+
+      div {
+        button {
+          padding: 0.6rem 1.2rem;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 384px) {
+  .about {
+    &_details {
+      width: 100%;
+
+      div {
+        gap: 0.5rem;
+        button {
+          padding: 0.5rem 1rem;
+          width: 100%;
+
+          font-size: 1.2rem;
+        }
       }
     }
   }
