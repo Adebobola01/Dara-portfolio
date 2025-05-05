@@ -32,15 +32,3 @@
   transform: translateY(0);
   // display: flex;
 }
-
-@media (max-width: 650px) {
-  .drawer {
-    // display: flex;
-  }
-}
-
-@media (min-width: 650px) {
-  .drawer {
-    display: none;
-  }
-}
