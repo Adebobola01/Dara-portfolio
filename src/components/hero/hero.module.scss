@@ -82,6 +82,7 @@
     z-index: 10;
     background: linear-gradient(#1255ad50, #1255ad50);
     // font-size: 2rem;
+    height: 60rem;
 
     &_details {
       position: absolute;
@@ -103,7 +104,7 @@
 
     &_image_container {
       // width: 100%;
-      opacity: 0.2;
+      opacity: 0 !important;
     }
   }
 }

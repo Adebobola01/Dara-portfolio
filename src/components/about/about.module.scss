@@ -78,7 +78,7 @@
     p {
       font-size: 1.6rem;
       margin: 0;
-      height: 21ch;
+      // height: 21ch;
       white-space: wrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -125,6 +125,13 @@
 
     &_details {
       width: 100%;
+      // height: 40rem;
+      // padding: 4rem;
+      p {
+        margin-top: 1rem;
+        height: auto;
+        // text-overflow: initial;
+      }
     }
     &_profile {
       order: 1;

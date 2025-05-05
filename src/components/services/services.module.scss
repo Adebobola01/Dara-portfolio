@@ -29,7 +29,7 @@
   flex-direction: column;
   align-items: center;
   width: 30rem;
-  // height: 20rem;
+  height: 35rem;
   color: #292828;
 
   img {
@@ -54,5 +54,16 @@
 
   div {
     // display: flex;
+  }
+}
+
+@media (max-width: 400px) {
+  .service {
+    width: 100%;
+
+    p {
+      font-size: 1.8rem;
+      margin-top: 1.8rem;
+    }
   }
 }

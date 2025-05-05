@@ -1,9 +1,8 @@
 import { useEffect, useRef } from "react";
 import Lenis from "@studio-freight/lenis";
-import styles from "./navigation.module.scss";
-import ToggleBtn from "../toggleBtn";
+import styles from "./drawer.module.scss";
 
-const Navigation = ({ drawerHandler, openDrawer }) => {
+const Drawer = ({ open, link }) => {
   const lenis = useRef(null);
   useEffect(() => {
     // Initialize Lenis
@@ -25,27 +24,26 @@ const Navigation = ({ drawerHandler, openDrawer }) => {
       lenis.current.destroy();
     };
   }, []);
-
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     lenis.current.scrollTo(element);
   };
   return (
-    <>
-      <nav className={styles.navigation}>
-        {/* <div> */}
-        <button onClick={() => scrollToSection("home")}>Home</button>
-        <button onClick={() => scrollToSection("about")}>About</button>
-        <button onClick={() => scrollToSection("services")}>Services</button>
-        <button onClick={() => scrollToSection("projects")}>Projects</button>
-        <button onClick={() => scrollToSection("footer")}>Contact</button>
-
-        {/* </div> */}
-        {/* <ToggleBtn click={props.toggleClick} opened={props.toggleOpen} /> */}
-      </nav>
-      <ToggleBtn click={drawerHandler} openDrawer={openDrawer} />
-    </>
+    <div
+      className={`${styles.drawer} ${
+        open === true ? styles.open_drawer : null
+      }`}
+    >
+      <button onClick={() => scrollToSection("about")}>About</button>
+      <button onClick={() => scrollToSection("services")}>Services</button>
+      <button onClick={() => scrollToSection("projects")}>Projects</button>
+      <button
+        onClick={() => scrollToSection(`${!link ? "#footer" : "#about"}`)}
+      >
+        {!link ? "Footer" : "About"}
+      </button>
+    </div>
   );
 };
 
-export default Navigation;
+export default Drawer;
