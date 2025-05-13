@@ -64,17 +64,11 @@ const About = () => {
       >
         <h3>About Me</h3>
         <p>
-          Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-          vulputate libero et velit interdum, ac aliquet odio mattis. Class
-          aptent taciti sociosqu ad litora torquent per conubia nostra, per
-          inceptos himenaeos. Curabitur tempus urna at turpis condimentum
-          lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis
-          condimentum ac, vestibulum eu nisl. Curabitur tempus urna at turpis
-          condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper
-          iaculis condimentum ac, vestibulum eu nisl. Vestibulum eu nisl.
-          Curabitur tempus urna at turpis condimentum lobortis. Ut commodo
-          efficitur neque. Ut diam quam, semper iaculis condimentum ac,
-          vestibulum eu nisl
+          Data analyst with experience in processing, analysing and presenting
+          data. Strong background in SQL, Python, Excel, Tableau, and proficient
+          in using these tools to perform data manipulation, visualisation.
+          Passionate about finding patterns and trends in data and using them to
+          help organisations make informed decisions and achieve their goals.
         </p>
         <div>
           <button className="white_btn">Download CV</button>

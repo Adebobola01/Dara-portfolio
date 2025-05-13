@@ -38,9 +38,9 @@ const Drawer = ({ open, link }) => {
       <button onClick={() => scrollToSection("services")}>Services</button>
       <button onClick={() => scrollToSection("projects")}>Projects</button>
       <button
-        onClick={() => scrollToSection(`${!link ? "#footer" : "#about"}`)}
+        onClick={() => scrollToSection(`${!link ? "contacts" : "about"}`)}
       >
-        {!link ? "Footer" : "About"}
+        {!link ? "Contacts" : "About"}
       </button>
     </div>
   );
