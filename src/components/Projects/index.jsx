@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 
 import ProjectImg from "../../assets/flood.png";
 import ProjectImg2 from "../../assets/geospatial.png";
-import ProjectImg3 from "../../assets/retail-sales.png";
+import ProjectImg3 from "../../assets/Retail-sales.png";
 
 const Project = ({ title, details, img }) => {
   return (
