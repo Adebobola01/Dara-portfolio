@@ -104,5 +104,22 @@
         order: 0;
       }
     }
+
+    div {
+      button {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .projects {
+    &_section {
+      width: 100% !important;
+    }
+    &_header {
+      padding: 0 2rem;
+    }
   }
 }
