@@ -21,9 +21,15 @@ const Footer = () => {
               clear, actionable insights that drive success
             </p>
             <div className={styles.footer_details_icons}>
-              <img src={whatsappIcon} alt="whatsapp icon" />
-              <img src={emailIcon} alt="email icon" />
-              <img src={githubIcon} alt="github icon" />
+              <a>
+                <img src={whatsappIcon} alt="whatsapp icon" />
+              </a>
+              <a target="_blank" href="mailto:Olasunkanmidara01@gmail.com">
+                <img src={emailIcon} alt="email icon" />
+              </a>
+              <a target="_blank" href="https://github.com/Akoriola">
+                <img src={githubIcon} alt="github icon" />
+              </a>
             </div>
           </div>
           <div className={styles.footer_navigation}>
@@ -39,22 +45,22 @@ const Footer = () => {
           <div className={styles.footer_contact}>
             <h2>Contact</h2>
             <div className={styles.footer_contact_details}>
-              <div>
+              <a>
                 <img src={phoneIcon} alt="phone icon" />
                 <p>+2348189117819</p>
-              </div>
-              <div>
+              </a>
+              <a>
                 <img src={whatsappIcon} alt="whatsapp icon" />
                 <p>WhatsApp</p>
-              </div>
-              <div>
+              </a>
+              <a>
                 <img src={emailIcon} alt="email icon" />
                 <p>Olasunkanmidara01@gmail.com</p>
-              </div>
-              <div>
+              </a>
+              <a target="_blank" href="https://github.com/Akoriola">
                 <img src={githubIcon} alt="github icon" />
                 <p>GitHub</p>
-              </div>
+              </a>
             </div>
           </div>
         </div>
