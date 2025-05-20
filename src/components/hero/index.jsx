@@ -4,7 +4,7 @@ import HeroImg2 from "../../assets/hero2.png";
 import HeroImg3 from "../../assets/hero3.png";
 import { motion } from "motion/react";
 
-const Hero = () => {
+const Hero = ({ hireButtonClick }) => {
   return (
     <section className={styles.hero} id="home">
       <motion.div
@@ -16,7 +16,7 @@ const Hero = () => {
         <p>Hi, I’m Oluwadara Olasunkanmi</p>
         <p>DATA ANALYST</p>
         <div className={styles.hero_details_btns}>
-          <button>Hire Me</button>
+          <button onClick={hireButtonClick}>Hire Me</button>
           <button className="white_btn">Download CV</button>
         </div>
       </motion.div>

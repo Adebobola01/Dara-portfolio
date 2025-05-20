@@ -4,7 +4,7 @@ import githubIcon from "../../assets/github_icon.png";
 import phoneIcon from "../../assets/phone_icon.png";
 import whatsappIcon from "../../assets/whatsapp_icon.png";
 
-const Footer = () => {
+const Footer = ({ hireButtonClick }) => {
   return (
     <footer className={styles.footer} id="contacts">
       <div className={styles.footer_container}>
@@ -14,7 +14,7 @@ const Footer = () => {
         </div>
         <div className={styles.footer_body}>
           <div className={styles.footer_details}>
-            <button>Contact Me</button>
+            <button onClick={hireButtonClick}>Contact Me</button>
             <h2>Oluwadara Olasunkanmi</h2>
             <p>
               Data analyst passionate about transforming complex data into
