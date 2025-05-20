@@ -3,10 +3,11 @@ import emailIcon from "../../assets/email_icon.png";
 import githubIcon from "../../assets/github_icon.png";
 import phoneIcon from "../../assets/phone_icon.png";
 import whatsappIcon from "../../assets/whatsapp_icon.png";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { motion } from "motion/react";
 
 const CONTACT_LEFT_PUSH = window.innerWidth <= 900 ? "50%" : "60%";
+console.log(CONTACT_LEFT_PUSH)
 
 const ContactDetails = () => {
   return (
@@ -37,6 +38,8 @@ const ContactDetails = () => {
 const Contact = ({ open, closeHandler }) => {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
+  const nameRef = useRef();
+  const messageRef = useRef();
 
   const handleNameChange = (e) => {
     setName(e.target.value);
@@ -44,6 +47,14 @@ const Contact = ({ open, closeHandler }) => {
   const handleMessageChange = (e) => {
     setMessage(e.target.value);
   };
+
+  const clearUserInputs = ()=>{
+    nameRef.current.value = "";
+    messageRef.current.value = "";
+  }
+  const mailHandler=()=>{
+
+  }
   return (
     <motion.div
       className={styles.contact_container}
@@ -52,22 +63,25 @@ const Contact = ({ open, closeHandler }) => {
     >
       <ContactDetails />
       <form className={styles.contact_form}>
-        <p onClick={closeHandler}>X</p>
+        <p onClick={()=>{clearUserInputs(); closeHandler()} }>X</p>
         <h2>Get In Touch </h2>
         <span>Feel free to drop a message below</span>
         <input
           type="text"
           placeholder="Your Name"
           onChange={handleNameChange}
+          ref={nameRef}
         />
         {/* <input type="text" placeholder="E"   /> */}
         <textarea
           placeholder="Type your message here..."
           onChange={handleMessageChange}
+          ref={messageRef}
         />
         <a
           href={`mailto:Olasunkanmidara01@gmail.com?subject=${name} from portfolio &body=${message}`}
           className={styles.submit_button}
+          onClick={mailHandler}
         >
           Send
         </a>
