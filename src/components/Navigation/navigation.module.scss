@@ -5,12 +5,11 @@
   button {
     font-size: 1.6rem;
     font-weight: 500;
-    // height: 2.4rem;
     color: #49494ac4;
     background-color: transparent;
+    outline: none;
 
     &:hover {
-      outline: none;
       border: none;
     }
   }

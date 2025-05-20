@@ -38,7 +38,7 @@ const Navigation = ({ drawerHandler, openDrawer }) => {
         <button onClick={() => scrollToSection("about")}>About</button>
         <button onClick={() => scrollToSection("services")}>Services</button>
         <button onClick={() => scrollToSection("projects")}>Projects</button>
-        <button onClick={() => scrollToSection("footer")}>Contact</button>
+        <button onClick={() => scrollToSection("contacts")}>Contact</button>
 
         {/* </div> */}
         {/* <ToggleBtn click={props.toggleClick} opened={props.toggleOpen} /> */}
