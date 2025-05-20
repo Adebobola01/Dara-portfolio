@@ -31,9 +31,10 @@
       justify-content: center;
       height: 6rem;
       border-radius: 50%;
+      cursor: pointer;
 
       &:hover {
-        background-color: #00000075;
+        background-color:rgba(0, 0, 0, 0.14);
       }
     }
 
@@ -91,6 +92,7 @@
     position: fixed;
     width: auto;
     left: -25rem;
+    z-index: 201;
     background-color: #2373e3;
     padding: 2rem 6rem;
     h2 {
