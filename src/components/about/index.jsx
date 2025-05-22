@@ -71,14 +71,12 @@ const About = () => {
           help organisations make informed decisions and achieve their goals.
         </p>
         <div>
-          <a
-            download={"Dara's portfolio"}
-            href={portfolio}
-            className="white_btn"
-          >
+          <a download={"Dara's portfolio"} href={portfolio}>
             Download CV
           </a>
-          <button>My Works on GitHub</button>
+          <a href="https://github.com/Akoriola/Portfolio_Projects">
+            My Works on GitHub
+          </a>
         </div>
       </motion.div>
     </section>

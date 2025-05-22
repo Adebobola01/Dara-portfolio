@@ -28,7 +28,7 @@ const Projects = () => {
     <section className={styles.projects_section} id="projects">
       <div className={styles.projects_header}>
         <h2>Recent Projects</h2>
-        <a href="https://github.com/Akoriola">View All</a>
+        <a href="https://github.com/Akoriola/Portfolio_Projects">View All</a>
       </div>
       <div className={styles.projects_container}>
         <Project
