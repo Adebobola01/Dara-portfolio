@@ -3,6 +3,7 @@ import HeroImg from "../../assets/hero1.png";
 import HeroImg2 from "../../assets/hero2.png";
 import HeroImg3 from "../../assets/hero3.png";
 import { motion } from "motion/react";
+import portfolio from "../../assets/my-resume.pdf";
 
 const Hero = ({ hireButtonClick }) => {
   return (
@@ -17,7 +18,13 @@ const Hero = ({ hireButtonClick }) => {
         <p>DATA ANALYST</p>
         <div className={styles.hero_details_btns}>
           <button onClick={hireButtonClick}>Hire Me</button>
-          <button className="white_btn">Download CV</button>
+          <a
+            download={"Dara's portfolio"}
+            href={portfolio}
+            className="white_btn"
+          >
+            Download CV
+          </a>
         </div>
       </motion.div>
       <motion.div

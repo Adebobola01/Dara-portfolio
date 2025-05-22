@@ -43,7 +43,14 @@
         font-size: 1.6rem;
         margin-right: 1rem;
       }
-      button {
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      button,
+      a {
         padding: 1rem;
         border-radius: 1rem;
         font-size: 1.6rem;
@@ -51,6 +58,7 @@
         background-color: #fff;
         border: 1px solid #2f85fe;
         width: 20rem;
+        cursor: pointer;
       }
     }
   }

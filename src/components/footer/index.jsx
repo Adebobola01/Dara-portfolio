@@ -21,7 +21,7 @@ const Footer = ({ hireButtonClick }) => {
               clear, actionable insights that drive success
             </p>
             <div className={styles.footer_details_icons}>
-              <a>
+              <a target="_blank" href="https://wa.me/2348189117819">
                 <img src={whatsappIcon} alt="whatsapp icon" />
               </a>
               <a target="_blank" href="mailto:Olasunkanmidara01@gmail.com">
@@ -45,21 +45,21 @@ const Footer = ({ hireButtonClick }) => {
           <div className={styles.footer_contact}>
             <h2>Contact</h2>
             <div className={styles.footer_contact_details}>
-              <a>
+              <a href="tel:+2348189117819">
                 <img src={phoneIcon} alt="phone icon" />
                 <p>+2348189117819</p>
               </a>
-              <a>
+              <a target="_blank" href="https://wa.me/2348189117819">
                 <img src={whatsappIcon} alt="whatsapp icon" />
                 <p>WhatsApp</p>
               </a>
-              <a>
+              <a target="_blank" href="mailto:Olasunkanmidara01@gmail.com">
                 <img src={emailIcon} alt="email icon" />
                 <p>Olasunkanmidara01@gmail.com</p>
               </a>
               <a target="_blank" href="https://github.com/Akoriola">
                 <img src={githubIcon} alt="github icon" />
-                <p>GitHub</p>
+                <p>Github</p>
               </a>
             </div>
           </div>
