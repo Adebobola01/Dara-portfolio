@@ -2,7 +2,7 @@ import styles from "./about.module.scss";
 import CheckmarkImg from "../../assets/checkmark.svg";
 import image from "../../assets/dara's_pic.png";
 import { motion } from "motion/react";
-
+import portfolio from "../../assets/my-resume.pdf";
 const About = () => {
   return (
     <section className={styles.about} id="about">
@@ -71,7 +71,13 @@ const About = () => {
           help organisations make informed decisions and achieve their goals.
         </p>
         <div>
-          <button className="white_btn">Download CV</button>
+          <a
+            download={"Dara's portfolio"}
+            href={portfolio}
+            className="white_btn"
+          >
+            Download CV
+          </a>
           <button>My Works on GitHub</button>
         </div>
       </motion.div>
