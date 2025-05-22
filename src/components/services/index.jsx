@@ -50,7 +50,7 @@ const Services = () => {
         />
         <Service
           image={visualizationIcon}
-          title="Data querying"
+          title="Data Querying"
           details="Using SQL to extract, join, and manipulate data from relational databases"
         />
       </div>
