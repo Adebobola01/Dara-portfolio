@@ -123,3 +123,18 @@
     }
   }
 }
+
+@media (max-width: 430px) {
+  .projects {
+    &_header {
+      padding: 0 1rem;
+      align-items: center;
+      h2 {
+        font-size: 2rem;
+      }
+      a {
+        padding: 0.8rem 3rem;
+      }
+    }
+  }
+}
