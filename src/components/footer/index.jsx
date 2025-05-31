@@ -2,6 +2,7 @@ import styles from "./footer.module.scss";
 import emailIcon from "../../assets/email_icon.png";
 import githubIcon from "../../assets/github_icon.png";
 import phoneIcon from "../../assets/phone_icon.png";
+import tableauIcon from "../../assets/tableau.svg";
 import whatsappIcon from "../../assets/whatsapp_icon.png";
 
 const Footer = ({ hireButtonClick }) => {
@@ -29,6 +30,9 @@ const Footer = ({ hireButtonClick }) => {
               </a>
               <a target="_blank" href="https://github.com/Akoriola">
                 <img src={githubIcon} alt="github icon" />
+              </a>
+              <a target="_blank" href="https://public.tableau.com/app/profile/olasunkanmi.oluwadara/vizzes">
+                <img src={tableauIcon} alt="tableau icon" />
               </a>
             </div>
           </div>
@@ -60,6 +64,10 @@ const Footer = ({ hireButtonClick }) => {
               <a target="_blank" href="https://github.com/Akoriola">
                 <img src={githubIcon} alt="github icon" />
                 <p>Github</p>
+              </a>
+              <a target="_blank" href="https://public.tableau.com/app/profile/olasunkanmi.oluwadara/vizzes">
+                <img src={tableauIcon} alt="tableau icon"  style={{width: "2rem", height: "2rem"}} />
+                <p>Tableau</p>
               </a>
             </div>
           </div>

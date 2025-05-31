@@ -1,6 +1,7 @@
 import styles from "./contact.module.scss";
 import emailIcon from "../../assets/email_icon.png";
 import githubIcon from "../../assets/github_icon.png";
+import tableauIcon from "../../assets/tableau.svg"
 import phoneIcon from "../../assets/phone_icon.png";
 import whatsappIcon from "../../assets/whatsapp_icon.png";
 import { useState, useRef } from "react";
@@ -29,6 +30,10 @@ const ContactDetails = () => {
         <a target="_blank" href="https://github.com/Akoriola">
           <img src={githubIcon} alt="github icon" />
           <p>GitHub</p>
+        </a>
+        <a target="_blank" href="https://public.tableau.com/app/profile/olasunkanmi.oluwadara/vizzes">
+          <img  style={{width: "2.5rem", height: "2.5rem"}} src={tableauIcon} alt="tableau icon" />
+          <p>Tableau</p>
         </a>
       </div>
     </div>
